@@ -1,0 +1,28 @@
+.logo-slider {
+
+  height: 93px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    background: linear-gradient(90deg, #0a2640 0%, transparent 32.29%, transparent 74.48%, #0a2640 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &__slide {
+    width: 145px;
+
+    &-pic {
+      width: 100%;
+    }
+  }
+}

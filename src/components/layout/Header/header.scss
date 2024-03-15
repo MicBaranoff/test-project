@@ -1,0 +1,19 @@
+.header {
+  padding-top: 56px;
+
+  &__logo {
+    display: block;
+    width: 162px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,11 @@
+.default-layout {
+  position: relative;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}

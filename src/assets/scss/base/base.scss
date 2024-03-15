@@ -8,6 +8,8 @@ body {
   font-weight: $regular;
   font-family: $font-default;
   line-height: $baseLineHeight;
+  overflow-x: hidden;
+  color: $black;
 }
 
 * {
@@ -29,7 +31,7 @@ textarea {
   appearance: none;
 
   @include placeholder {
-    color: $grey;
+    color: $gray;
     opacity: 1;
   }
 }
@@ -107,16 +109,4 @@ h6 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $white;
-}
-
-.mobile-hide {
-  @include is-mobile {
-    display: none;
-  }
-}
-
-.desktop-hide {
-  @include is-desktop {
-    display: none;
-  }
 }

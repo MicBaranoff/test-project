@@ -2,12 +2,11 @@
   -webkit-appearance: none;
   border: none;
   box-shadow: none;
-  padding: 16px;
   border-radius: 56px;
-  height: 60px;
   text-align: center;
-  background: $blue-dark;
-  color: $white;
+  background: none;
+
+  $parent: &;
 
   @include hover {
     opacity: 0.8;
@@ -16,10 +15,75 @@
   &__font {
     &--text {
       font-weight: $bold;
-      font-size: 20px;
-      line-height: 140%;
     }
   }
 
+  &--md {
+    padding: 16px 56px;
+    height: 60px;
 
+    #{$parent} {
+      &__font {
+        &--text {
+          font-size: 20px;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+
+  &--sm {
+    padding: 8px 40px;
+    height: 40px;
+
+    #{$parent} {
+      &__font {
+        &--text {
+          font-size: 16px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  &--filled {
+    &--white {
+      background: $white;
+      color: $blue-dark;
+    }
+
+    &--blue {
+      background: $blue-dark;
+      color: $white;
+    }
+
+    &--green {
+      background: $green;
+      color: $blue-dark;
+    }
+  }
+
+  &--bordered {
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 2px solid;
+      border-radius: 56px;
+    }
+
+    &--white {
+      color: $white;
+    }
+
+    &--blue {
+      color: $blue-dark;
+    }
+  }
 }

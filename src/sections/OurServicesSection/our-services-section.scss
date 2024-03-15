@@ -1,0 +1,26 @@
+.our-services-section {
+
+  &__font {
+    &--subtitle{
+      color: $gray;
+    }
+  }
+
+  &__head {
+    width: 100%;
+    max-width: 842px;
+    text-align: center;
+    margin: 0 auto 80px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-top: 12px;
+  }
+}

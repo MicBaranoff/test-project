@@ -32,8 +32,8 @@ $font-accent--2:            $manrope, $sans !default;
 // -------------------------
 $white:                     #ffffff !default;
 $black:                     #000000 !default;
-$grey:                      #d0d3d4 !default;
-$green:                     #2ea555 !default;
+$gray:                      #777777 !default;
+$green:                     #69E6A6 !default;
 $yellow:                    #ffd525 !default;
 
 $blue:                      #1a8cff !default;
@@ -45,12 +45,12 @@ $red:                       #e03c31 !default;
 $validationRed:             #D93025 !default;
 $validationGreen:           #16B712 !default;
 
-$grey--1:                   #D0C9D6 !default;
-$grey--2:                   #F1F1F1 !default;
-$grey--3:                   #9C9C9C !default;
-$grey--4:                   #B3B3B3 !default;
-$grey--5:                   #4D4D4D !default;
-$grey--6:                   #414141 !default;
+$gray--1:                   #D0C9D6 !default;
+$gray--2:                   #F1F1F1 !default;
+$gray--3:                   #9C9C9C !default;
+$gray--4:                   #777777 !default;
+$gray--5:                   #4D4D4D !default;
+$gray--6:                   #414141 !default;
 
 // Scaffolding
 // -------------------------
@@ -60,8 +60,8 @@ $hrBorder:                  $black !default;
 
 // Links
 // -------------------------
-$linkColor:                 $yellow !default;
-$linkColorHover:            darken($yellow, 10%) !default;
+$linkColor:                 $green !default;
+$linkColorHover:            darken($green, 10%) !default;
 
 // Easing presets
 // --------------------------

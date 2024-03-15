@@ -10,6 +10,18 @@ module.exports = defineConfig({
     }
   },
 
+  configureWebpack: config => {
+    config.module.rules
+        .filter(r => r.test.toString().includes('svg'))
+        .forEach(r => (r.test = /\.(png|jpe?g|gif)$/));
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      loader: 'svg-loader',
+      exclude: /node_modules/
+    });
+  },
+
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'scss',
