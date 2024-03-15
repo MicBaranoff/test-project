@@ -1,0 +1,29 @@
+.list-text-section {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 493px;
+    padding-top: 65px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 56px;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 494px;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+}

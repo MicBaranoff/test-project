@@ -1,14 +1,23 @@
 <template>
   <ul class="icon-list">
-    <li class="icon-list__item">
-      <p class="icon-list__font icon-list__font--text">123</p>
+    <li v-for="(item, index) in data"
+        class="icon-list__item"
+        :key="Math.random() + index + 'list'"
+    >
+      <p class="text text--lg icon-list__font icon-list__font--text">{{ item }}</p>
     </li>
   </ul>
 </template>
 
 <script>
 export default {
-name: "IconList"
+  name: "IconList",
+  props: {
+    data: {
+      type: Array,
+      default: () => [''],
+    }
+  }
 }
 </script>
 

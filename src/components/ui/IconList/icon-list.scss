@@ -1,14 +1,22 @@
 .icon-list {
-
-  background: #cccccc;
+  margin: 0;
+  padding: 0;
 
   &__item {
     position: relative;
     padding-left: 64px;
     display: flex;
     align-items: center;
+    min-height: 36px;
+    margin-top: 24px;
+
+    &:first-child {
+      margin: 0;
+    }
 
     &:before {
+      position: absolute;
+      left: 0;
       width: 36px;
       height: 36px;
       border-radius: 50%;

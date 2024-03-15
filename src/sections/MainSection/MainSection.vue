@@ -21,7 +21,7 @@
         </div>
 
         <div class="main-section__image">
-          <img class="main-section__pic" src="/img/pages/home/main-section/hero-graphics.png" alt="">
+          <img class="main-section__pic" src="/img/pages/home/hero-graphics.png" alt="">
         </div>
       </div>
 

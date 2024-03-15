@@ -1,0 +1,29 @@
+.text-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.08);
+  background: $white;
+  transition: box-shadow $transTime ease, color $transTime ease, background $transTime ease;
+  color: $blue-dark;
+  border-radius: 4px;
+
+  $parent: &;
+
+  @include hover {
+    color: $white;
+    background: $blue-dark;
+    box-shadow: none;
+  }
+
+  &__font {
+    &--text {
+      font-weight: $semiBold;
+    }
+  }
+
+  &__ico {
+    width: 24px;
+  }
+}
