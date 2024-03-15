@@ -1,0 +1,70 @@
+//
+// Mixins
+// --------------------------------------------------
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    @content;
+  }
+
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    @content;
+  }
+
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    /* Microsoft Edge,  Internet Explorer 10-11 */
+    @content;
+  }
+
+  &::placeholder {
+    /* Most modern browsers support this now. */
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover), (min-width: 0\0), (min--moz-device-pixel-ratio: 0) {
+    &:hover:not(:active) {
+      @content;
+    }
+  }
+}
+
+// Clearfix
+@mixin clearfix {
+  &::before,
+  &::after {
+    display: table;
+    content: '';
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin is-mobile {
+  @at-root .js-is-mobile & {
+    @content;
+  }
+}
+
+@mixin is-desktop {
+  @at-root .js-is-desktop & {
+    @content;
+  }
+}

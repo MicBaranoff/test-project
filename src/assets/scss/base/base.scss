@@ -1,0 +1,122 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: $regular;
+  font-family: $font-default;
+  line-height: $baseLineHeight;
+}
+
+* {
+  box-sizing: border-box;
+
+  &:active {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+input,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  @include placeholder {
+    color: $grey;
+    opacity: 1;
+  }
+}
+
+input[type='text'] {
+  &:focus {
+    @include placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: $linkColor;
+
+  &:hover,
+  &:active {
+    color: $linkColorHover;
+  }
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: $regular;
+  line-height: 1;
+}
+
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: em(0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba($white, 0.1);
+  border-radius: em(20);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $white;
+  border-radius: em(20);
+  transition: $transTime300ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
+}
+
+.mobile-hide {
+  @include is-mobile {
+    display: none;
+  }
+}
+
+.desktop-hide {
+  @include is-desktop {
+    display: none;
+  }
+}

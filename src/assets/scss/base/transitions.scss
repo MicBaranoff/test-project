@@ -1,0 +1,46 @@
+.fade {
+  &-enter-active {
+    transition: opacity $transTime300ms;
+  }
+
+  &-leave-active {
+    transition: opacity $transTime300ms;
+  }
+
+  &-enter {
+    opacity: 0;
+  }
+
+  &-leave-to {
+    opacity: 0;
+  }
+}
+
+/****************************************** transitions **********************************************/
+// Transition example
+//
+//.modal {
+//  &-enter {
+//    transform: translateY(100%);
+//  }
+//
+//  &-enter-to {
+//    transform: translateY(0);
+//  }
+//
+//  &-enter-active {
+//    transform: translateY(0);
+//  }
+//
+//  &-leave {
+//    transform: translateY(0);
+//  }
+//
+//  &-leave-to {
+//    transform: translateY(100%);
+//  }
+//
+//  &-leave-active {
+//    transition: all 300ms $easeOutCubic;
+//  }
+//}

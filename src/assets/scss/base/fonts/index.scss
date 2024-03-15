@@ -1,0 +1,94 @@
+@import "mixins";
+
+// === OpenSans
+@font-face {
+  font-family: 'OpenSans';
+  src: url('#{$fontPath}OpenSans/OpenSans-Regular.woff2') format('woff2'),
+  url('#{$fontPath}OpenSans/OpenSans-Regular.woff') format('woff'),
+  url('#{$fontPath}OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: $regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('#{$fontPath}OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
+  url('#{$fontPath}OpenSans/OpenSans-SemiBold.woff') format('woff'),
+  url('#{$fontPath}OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: $semiBold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('#{$fontPath}OpenSans/OpenSans-Bold.woff2') format('woff2'),
+  url('#{$fontPath}OpenSans/OpenSans-Bold.woff') format('woff'),
+  url('#{$fontPath}OpenSans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: $bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// === WorkSans
+@font-face {
+  font-family: 'WorkSans';
+  src: url('#{$fontPath}WorkSans/WorkSans-Regular.woff2') format('woff2'),
+  url('#{$fontPath}WorkSans/WorkSans-Regular.woff') format('woff'),
+  url('#{$fontPath}WorkSans/WorkSans-Regular.ttf') format('truetype');
+  font-weight: $regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('#{$fontPath}WorkSans/WorkSans-SemiBold.woff2') format('woff2'),
+  url('#{$fontPath}WorkSans/WorkSans-SemiBold.woff') format('woff'),
+  url('#{$fontPath}WorkSans/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: $semiBold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('#{$fontPath}WorkSans/WorkSans-Bold.woff2') format('woff2'),
+  url('#{$fontPath}WorkSans/WorkSans-Bold.woff') format('woff'),
+  url('#{$fontPath}WorkSans/WorkSans-Bold.ttf') format('truetype');
+  font-weight: $bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// === Manrope
+@font-face {
+  font-family: 'Manrope';
+  src: url('#{$fontPath}Manrope/Manrope-Regular.woff2') format('woff2'),
+  url('#{$fontPath}Manrope/Manrope-Regular.woff') format('woff'),
+  url('#{$fontPath}Manrope/Manrope-Regular.ttf') format('truetype');
+  font-weight: $regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('#{$fontPath}Manrope/Manrope-SemiBold.woff2') format('woff2'),
+  url('#{$fontPath}Manrope/Manrope-SemiBold.woff') format('woff'),
+  url('#{$fontPath}Manrope/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: $semiBold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('#{$fontPath}Manrope/Manrope-Bold.woff2') format('woff2'),
+  url('#{$fontPath}Manrope/Manrope-Bold.woff') format('woff'),
+  url('#{$fontPath}Manrope/Manrope-Bold.ttf') format('truetype');
+  font-weight: $bold;
+  font-style: normal;
+  font-display: swap;
+}

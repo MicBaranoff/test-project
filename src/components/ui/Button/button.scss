@@ -1,0 +1,25 @@
+.button {
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  padding: 16px;
+  border-radius: 56px;
+  height: 60px;
+  text-align: center;
+  background: $blue-dark;
+  color: $white;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  &__font {
+    &--text {
+      font-weight: $bold;
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }
+
+
+}
