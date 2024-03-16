@@ -34,7 +34,7 @@
         <transition name="fade">
           <Button
               v-show="!isNothingToFetch"
-              @onClick="loadBlogCards"
+              @onClick="loadBlogCards(true)"
               type="bordered">
             Load more
           </Button>
@@ -75,12 +75,12 @@ export default {
   },
 
   mounted() {
-    this.loadBlogCards();
+    this.loadBlogCards(false);
   },
 
   methods: {
-    loadBlogCards() {
-      this.fetchDataWithPromise(this.blogConfig).then((res) => {
+    loadBlogCards(showPreloader) {
+      this.fetchDataWithPromise(this.blogConfig, showPreloader).then((res) => {
         this.blogCardsToShow = [...this.blogCardsToShow, ...res];
       });
     },

@@ -23,8 +23,8 @@ export default {
             }, this.delay * 1000);
         },
 
-        fetchDataWithPromise(array) {
-            this.requestInProgress = true;
+        fetchDataWithPromise(array, showPreloader = true) {
+            if (showPreloader) this.requestInProgress = true;
 
             return new Promise((resolve) => {
                 this.fetchData(array, (elements) => {
