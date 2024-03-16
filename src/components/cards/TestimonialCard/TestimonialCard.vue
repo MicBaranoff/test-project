@@ -1,22 +1,20 @@
 <template>
   <div class="testimonial-card">
     <div class="testimonial-card__message">
-      <p class="text text--extra-lg">{{text}}</p>
+      <p class="text text--extra-lg">{{ message }}</p>
     </div>
 
     <div class="testimonial-card__author">
       <div class="testimonial-card__img">
-        <img class="testimonial-card__pic" src="" alt="">
+        <img class="testimonial-card__pic" :src="image" alt="">
       </div>
       <div>
-        <div class="testimonial-card__author-name">
-          <span class="text text--md testimonial-card__font testimonial-card__font--author">
-            Albus Dumbledore
-          </span>
-        </div>
-        <span class="text text--sm testimonial-card__font testimonial-card__font--desc">
-            Manager @ Slytherin
-        </span>
+        <p class="text text--md testimonial-card__font testimonial-card__font--author">
+          {{ title }}
+        </p>
+        <p class="text text--sm testimonial-card__font testimonial-card__font--desc">
+            {{ text }}
+        </p>
       </div>
     </div>
   </div>
@@ -32,6 +30,10 @@ export default {
       default: ''
     },
     text: {
+      type: String,
+      default: ''
+    },
+    message: {
       type: String,
       default: ''
     },

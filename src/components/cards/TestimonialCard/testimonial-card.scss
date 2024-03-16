@@ -26,8 +26,8 @@
   }
 
   &__img {
-    width: 40px;
-    height: 40px;
+    width: 58px;
+    height: 58px;
     overflow: hidden;
     border-radius: 50%;
   }
@@ -42,9 +42,9 @@
     display: flex;
     align-items: center;
     gap: 16px;
+  }
 
-    &-name {
-      margin-bottom: 6px;
-    }
+  &__author-name {
+    margin-bottom: 6px;
   }
 }

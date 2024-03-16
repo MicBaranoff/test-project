@@ -5,6 +5,9 @@
       <OurServicesSection class="home-page__services" />
       <HomeListTextSection class="home-page__list" />
       <AdvantagesSection  class="home-page__advantages" />
+      <TestimonialsSection class="home-page__testimonials" />
+      <TabsImageSection class="home-page__tabs" />
+      <BlogSection class="home-page__blog" />
     </div>
   </DefaultLayout>
 </template>
@@ -15,6 +18,9 @@ import MainSection from "@/sections/MainSection/MainSection.vue";
 import OurServicesSection from "@/sections/OurServicesSection/OurServicesSection.vue";
 import HomeListTextSection from "@/sections/ListTextSection/ListTextSection.vue";
 import AdvantagesSection from "@/sections/AdvantagesSection/AdvantagesSection.vue";
+import TestimonialsSection from "@/sections/TestimonialsSection/TestimonialsSection.vue";
+import TabsImageSection from "@/sections/TabsImageSection/TabsImageSection.vue";
+import BlogSection from "@/sections/BlogSection/BlogSection.vue";
 
 export default {
   name: 'Home',
@@ -25,6 +31,9 @@ export default {
     OurServicesSection,
     HomeListTextSection,
     AdvantagesSection,
+    TestimonialsSection,
+    TabsImageSection,
+    BlogSection,
   }
 }
 </script>

@@ -1,0 +1,27 @@
+.testimonials-section {
+  padding: 104px 0 88px 0;
+  background: $blue-dark;
+
+  &__font {
+    &--title {
+      color: $white;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 716px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 28px;
+  }
+}

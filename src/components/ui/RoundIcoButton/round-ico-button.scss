@@ -1,0 +1,79 @@
+.round-ico-button {
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  background: none;
+  border-radius: 50%;
+
+  $parent: &;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  &--md {
+    width: 72px;
+    height: 72px;
+
+    #{$parent} {
+      &__ico {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  &--sm {
+    width: 42px;
+    height: 42px;
+
+    #{$parent} {
+      &__ico {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  &--filled {
+    &--white {
+      background: $white;
+      color: $blue-dark;
+    }
+
+    &--blue {
+      background: $blue-dark;
+      color: $white;
+    }
+
+    &--green {
+      background: $green;
+      color: $blue-dark;
+    }
+  }
+
+  &--bordered {
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 2px solid;
+      border-radius: 56px;
+    }
+
+    &--white {
+      color: $white;
+    }
+
+    &--blue {
+      color: $blue-dark;
+    }
+  }
+}

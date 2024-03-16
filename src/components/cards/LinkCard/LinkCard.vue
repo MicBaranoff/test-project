@@ -12,7 +12,7 @@
 
     <button type="button" class="link-card__button">
       <span class="link-card__font link-card__font--button">Explore page</span>
-      <Icon class="link-card__button-ico" name="icons/arrow-right"/>
+      <Icon class="link-card__button-ico" name="icons/nav/arrow-right"/>
     </button>
   </div>
 </template>

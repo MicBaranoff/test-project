@@ -1,0 +1,32 @@
+.blog-section {
+
+  &__font {
+    &--subtitle{
+      color: $gray;
+    }
+  }
+
+  &__head {
+    width: 100%;
+    max-width: 842px;
+    text-align: center;
+    margin: 0 auto 80px;
+  }
+
+  &__title {
+    margin-top: 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+  }
+}
