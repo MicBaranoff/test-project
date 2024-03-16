@@ -8,6 +8,7 @@
       <TestimonialsSection class="home-page__testimonials" />
       <TabsImageSection class="home-page__tabs" />
       <BlogSection class="home-page__blog" />
+      <FeedBackSection class="home-page__feedback" />
     </div>
   </DefaultLayout>
 </template>
@@ -21,6 +22,7 @@ import AdvantagesSection from "@/sections/AdvantagesSection/AdvantagesSection.vu
 import TestimonialsSection from "@/sections/TestimonialsSection/TestimonialsSection.vue";
 import TabsImageSection from "@/sections/TabsImageSection/TabsImageSection.vue";
 import BlogSection from "@/sections/BlogSection/BlogSection.vue";
+import FeedBackSection from "@/sections/FeedbackSection/FeedBackSection.vue";
 
 export default {
   name: 'Home',
@@ -34,6 +36,7 @@ export default {
     TestimonialsSection,
     TabsImageSection,
     BlogSection,
+    FeedBackSection,
   }
 }
 </script>

@@ -1,0 +1,59 @@
+.input {
+
+  $parent: &;
+
+  display: block;
+
+  &__font {
+    &--error {
+      color: $validationRed;
+    }
+  }
+
+  &__field {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 56px;
+    margin: 0;
+    padding: 0 23px;
+    color: $black;
+    font-weight: $regular;
+    font-size: 20px;
+    background: $white;
+    border: 2px solid $white;
+    border-radius: 240px;
+    -webkit-appearance: none;
+
+    &:focus {
+      border-color:  $green;
+    }
+
+    &::placeholder {
+      color: $gray;
+    }
+
+    @include is-mobile {
+      $font-size: 15;
+
+      height: 42px;
+      padding: 0 15px;
+      font-size: 15px;
+      border-radius: 60px;
+    }
+  }
+
+  &__footer {
+    display: block;
+    margin-top: 5px;
+    padding: 0 23px;
+  }
+
+  &--error {
+    #{$parent} {
+      &__field {
+        border-color: $validationRed;
+      }
+    }
+  }
+}

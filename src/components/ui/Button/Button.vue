@@ -1,6 +1,6 @@
 <template>
   <button
-      type="button"
+      :type="typeAttr"
       class="button"
       @click="$emit('onClick')"
       :class="{
@@ -32,6 +32,13 @@ export default {
       default: 'filled',
       validator(value) {
         return ['bordered', 'filled'].includes(value)
+      }
+    },
+    typeAttr: {
+      type: String,
+      default: 'button',
+      validator(value) {
+        return ['button', 'submit'].includes(value)
       }
     },
     color: {

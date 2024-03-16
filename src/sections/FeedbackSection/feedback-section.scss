@@ -1,0 +1,42 @@
+.feedback-section {
+
+  &__font {
+    &--title {
+      color: $white;
+    }
+  }
+
+  &__container {
+    padding: 72px;
+    background: $blue-dark;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      top: -1050px;
+      right: -600px;
+      width: 1293px;
+      height: 1293px;
+      border-radius: 50%;
+      background: #1C3D5B;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 716px;
+    margin: 0 auto 48px;
+    text-align: center;
+
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+}

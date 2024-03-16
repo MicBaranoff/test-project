@@ -1,0 +1,9 @@
+.feedback-form {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  &__input {
+    width: 370px;
+  }
+}
