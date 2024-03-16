@@ -1,0 +1,76 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 114px;
+
+  &__font {
+    &--text {
+      color: $gray;
+    }
+
+    &--title {
+      font-weight: $bold;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $gray;
+      line-height: 300%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 300px;
+  }
+
+  &__info-text {
+    margin-bottom: 64px;
+  }
+
+  &__logo {
+    display: block;
+    width: 156px;
+    margin-bottom: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    width: 100%;
+    max-width: 642px;
+
+    &-col {
+      width: 33.3%;
+    }
+
+    &-list {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      margin-top: 32px;
+    }
+  }
+
+
+  &__nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    &--hiring {
+      &:after {
+        content: 'Hiring!';
+        background: $green;
+        color: $blue-dark;
+        font-size: 13px;
+        line-height: 215%;
+        font-weight: $bold;
+        padding: 1px 14px;
+        border-radius: 120px;
+      }
+    }
+  }
+}
