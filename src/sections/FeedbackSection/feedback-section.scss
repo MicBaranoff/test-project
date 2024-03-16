@@ -20,11 +20,12 @@
       position: absolute;
       z-index: 0;
       top: -1050px;
-      right: -600px;
+      right: -561px;
       width: 1293px;
       height: 1293px;
       border-radius: 50%;
       background: #1C3D5B;
+      pointer-events: none;
     }
   }
 
