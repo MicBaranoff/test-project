@@ -18,10 +18,16 @@
   }
 
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 998px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     gap: 50px;
+  }
+
+  &__card {
   }
 
   &__button {

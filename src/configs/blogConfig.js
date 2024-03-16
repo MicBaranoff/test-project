@@ -97,14 +97,5 @@ export default [
         date: 'November 22, 2021',
         avatar: '/img/testimonials/a2.jpg',
         image: '/img/blog/b2.jpg',
-    },
-    {
-        id: 11,
-        name: 'Monica Geller',
-        message: 'Beta prototype sales iPad gen-z marketing network effects value proposition',
-        category: 'Category',
-        date: 'November 22, 2021',
-        avatar: '/img/testimonials/a3.jpg',
-        image: '/img/blog/b3.jpg',
     }
 ]
