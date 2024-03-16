@@ -3,6 +3,9 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    max-width: 1167px;
+    position: relative;
+    right: -25px;
   }
 
   &__content {

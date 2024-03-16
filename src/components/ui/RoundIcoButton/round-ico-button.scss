@@ -5,12 +5,14 @@
   text-align: center;
   background: none;
   border-radius: 50%;
+  transition: scale $transTime ease;
 
   $parent: &;
 
   @include hover {
-    opacity: 0.8;
+    scale: 1.05;
   }
+
 
   &--md {
     width: 72px;

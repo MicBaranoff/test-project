@@ -3,15 +3,16 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    max-width: 1130px;
   }
 
   &__content {
-    width: 493px;
+    width: 500px;
     padding-top: 106px;
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   &__list {
@@ -30,7 +31,7 @@
   }
 
   &__item {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   &__chart {
@@ -40,8 +41,8 @@
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12);
     background: $white;
     border-radius: 12px;
-    left: 50%;
+    left: 44%;
     transform: translateX(-50%);
-    bottom: -80px;
+    bottom: -76px;
   }
 }

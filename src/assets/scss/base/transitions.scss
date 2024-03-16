@@ -15,6 +15,17 @@
     opacity: 0;
   }
 }
+.fade-up {
+  &-enter-active, &--leave-active {
+    transition: opacity $transTime900ms, transform $transTime900ms;
+  }
+
+  &-enter, &--leave-to /* .list-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
 
 .slide {
   &-enter-active {

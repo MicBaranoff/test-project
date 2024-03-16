@@ -54,7 +54,7 @@ import BlogCard from "@/components/cards/BlogCard/BlogCard.vue";
 import Button from "@/components/ui/Button/Button.vue";
 import GlobalLoader from "@/components/common/GlobalLoader/GlobalLoader.vue";
 
-import fetchDataWithTimeout from "@/mixins/fetchDataWithTimeout";
+import fetchDataWithTimeout from "@/mixins/fetchArrayDataWithTimeout";
 
 import blogConfig from "@/configs/blogConfig";
 

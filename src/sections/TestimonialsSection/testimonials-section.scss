@@ -8,11 +8,15 @@
     }
   }
 
+  &__container {
+    max-width: 1130px;
+  }
+
   &__head {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 67px;
   }
 
   &__title {
@@ -23,5 +27,8 @@
   &__nav {
     display: flex;
     gap: 28px;
+    position: relative;
+    bottom: -11px;
+    right: -51px;
   }
 }

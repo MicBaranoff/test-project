@@ -1,14 +1,16 @@
 <template>
   <div class="blog-card">
-    <div class="blog-card__image">
-      <img class="blog-card__pic" :src="image" alt="">
-    </div>
-    <div class="blog-card__info">
-      <span class="text text--md blog-card__font blog-card__font--category">{{ category }}</span>
-      <span class="text text--md blog-card__font blog-card__font--date">{{ date }}</span>
-    </div>
-    <div class="blog-card__message">
-      <p class="text text--lg">{{ message }}</p>
+    <div>
+      <div class="blog-card__image">
+        <img class="blog-card__pic" :src="image" alt="">
+      </div>
+      <div class="blog-card__info">
+        <span class="text text--md blog-card__font blog-card__font--category">{{ category }}</span>
+        <span class="text text--md blog-card__font blog-card__font--date">{{ date }}</span>
+      </div>
+      <div class="blog-card__message">
+        <p class="text text--lg">{{ message }}</p>
+      </div>
     </div>
 
     <div class="blog-card__author">

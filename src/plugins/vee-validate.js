@@ -25,6 +25,7 @@ localize({
       password: 'Password is incorrect, try again',
       is: 'The field value must match the test value',
       name: 'The field contains invalid characters or is less than two characters long',
+      email: 'Enter a real email address',
     },
   },
 });

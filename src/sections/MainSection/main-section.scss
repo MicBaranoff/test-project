@@ -10,8 +10,8 @@
     display: block;
     position: absolute;
     z-index: 0;
-    top: -800px;
-    right: -700px;
+    top: -785px;
+    right: -680px;
     width: 1293px;
     height: 1293px;
     border-radius: 50%;
@@ -31,6 +31,7 @@
   &__info {
     width: 100%;
     max-width: 567px;
+    padding-top: 53px;
   }
 
   &__container {
@@ -63,6 +64,6 @@
   }
 
   &__logos {
-    margin-top: 56px;
+    margin-top: 60px;
   }
 }

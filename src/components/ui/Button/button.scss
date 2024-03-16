@@ -5,11 +5,12 @@
   border-radius: 56px;
   text-align: center;
   background: none;
+  transition: scale $transTime ease;
 
   $parent: &;
 
   @include hover {
-    opacity: 0.8;
+    scale: 1.05;
   }
 
   &:disabled {

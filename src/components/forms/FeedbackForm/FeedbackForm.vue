@@ -14,25 +14,33 @@
       <Button
         typeAttr="submit"
         color="green"
-        :disabled="failed"
+        :disabled="failed || requestInProgress"
       >
         Start now
       </Button>
     </form>
+    <transition name="fade">
+      <GlobalLoader v-if="requestInProgress"/>
+    </transition>
   </ValidationObserver>
 </template>
 
 <script>
 import Input from "@/components/ui/Input/Input.vue";
 import Button from "@/components/ui/Button/Button.vue";
+import GlobalLoader from "@/components/common/GlobalLoader/GlobalLoader.vue";
 
 import withValidation from '@/tools/withValidation';
+
+import simulateFetchRequest from "@/mixins/simulateFetchRequest";
 
 import { ValidationObserver } from 'vee-validate';
 
 export default {
   name: "FeedbackForm",
+  mixins: [simulateFetchRequest],
   components: {
+    GlobalLoader,
     Input: withValidation(Input),
     Button,
     ValidationObserver,
@@ -47,10 +55,10 @@ export default {
   },
 
   methods: {
-    async submitHandler() {
-      const { email } = this.formData;
-
-      console.log(email);
+    submitHandler() {
+      this.simulateRequest(this.formData).then(() => {
+        this.$emit('onSubmit');
+      })
     },
   }
 }

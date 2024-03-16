@@ -1,6 +1,6 @@
 <template>
   <div class="tabs-image-section">
-    <div class="container">
+    <div class="container tabs-image-section__container">
       <div class="tabs-image-section__image">
         <img src="/img/pages/home/office.jpg" alt="" class="tabs-image-section__pic">
       </div>

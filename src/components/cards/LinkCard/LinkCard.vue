@@ -7,11 +7,11 @@
       <div class="link-card__title">
         <h4 class="text text--extra-lg">{{ title }}</h4>
       </div>
-      <p class="text text--md link-card__font link-card__font--text">{{text}}</p>
+      <p class="text text--lg link-card__font link-card__font--text">{{text}}</p>
     </div>
 
     <button type="button" class="link-card__button">
-      <span class="link-card__font link-card__font--button">Explore page</span>
+      <span class="text text--lg link-card__font link-card__font--button">Explore page</span>
       <Icon class="link-card__button-ico" name="icons/nav/arrow-right"/>
     </button>
   </div>

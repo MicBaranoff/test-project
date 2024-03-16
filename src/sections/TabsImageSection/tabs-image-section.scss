@@ -1,5 +1,9 @@
 .tabs-image-section {
 
+  &__container {
+    max-width: 1130px;
+  }
+
   &__image {
     width: 100%;
     height: 403px;

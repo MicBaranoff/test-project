@@ -1,6 +1,6 @@
 <template>
   <div class="testimonials-section">
-    <div class="container">
+    <div class="container testimonials-section__container">
       <div class="testimonials-section__head">
         <div class="testimonials-section__title">
           <h2 class="title title--lg testimonials-section__font testimonials-section__font--title">

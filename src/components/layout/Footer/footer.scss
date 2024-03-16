@@ -34,16 +34,17 @@
   &__logo {
     display: block;
     width: 156px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   &__nav {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    max-width: 642px;
+    max-width: 720px;
 
     &-col {
-      width: 33.3%;
+      width: 31.2%;
     }
 
     &-list {
