@@ -1,0 +1,53 @@
+.test-data-chart {
+  padding: 24px 26px;
+
+  &__font {
+    &--text {
+      font-weight: $font-accent--1;
+      font-size: 13px;
+      line-height: 171%;
+    }
+  }
+
+  &__info {
+    padding: 0;
+    margin: 23px 0 0;
+    list-style-type: none;
+  }
+
+  &__canvas {
+    width: 173px;
+    height: 173px;
+  }
+
+  &__item {
+    padding-left: 13px;
+    position: relative;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 8px;
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+    }
+
+    &--blue:before {
+      background: $blue;
+    }
+    &--green:before {
+      background: $green;
+    }
+    &--gray:before {
+      background: $gray--1;
+    }
+  }
+}

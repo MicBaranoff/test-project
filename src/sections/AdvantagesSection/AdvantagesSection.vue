@@ -18,7 +18,11 @@
       </div>
 
       <div class="advantages-section__image">
-        <img src="/img/pages/home/photo-graphics-2.png" alt="" class="advantages-section__pic">
+        <img src="/img/pages/home/call.jpg" alt="" class="advantages-section__pic">
+
+        <div class="advantages-section__chart">
+          <TestDataChart />
+        </div>
       </div>
     </div>
   </div>
@@ -26,6 +30,7 @@
 
 <script>
 import TextIconBox from "@/components/ui/TextIconBox/TextIconBox.vue";
+import TestDataChart from "@/components/blocks/TestDataChart/TestDataChart.vue";
 
 const listData = [
   {
@@ -49,6 +54,7 @@ export default {
   name: "ListTextSection",
   components: {
     TextIconBox,
+    TestDataChart,
   },
   data() {
     return {
