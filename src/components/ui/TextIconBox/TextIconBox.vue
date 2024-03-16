@@ -1,7 +1,7 @@
 <template>
   <div class="text-icon-box">
     <Icon class="text-icon-box__ico" :name="icon"/>
-    <span class="text text--lg text-icon-box__font text-icon-box__font--text">
+    <span class="text text--md text-icon-box__font text-icon-box__font--text">
       {{text}}
     </span>
   </div>
