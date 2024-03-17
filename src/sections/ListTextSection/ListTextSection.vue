@@ -19,11 +19,13 @@
 
         <IconList class="list-text-section__list" :data="listData" />
 
-        <Button
+        <div
             data-aos="fade-up"
             data-aos-duration="700">
-          Start now
-        </Button>
+          <Button>
+            Start now
+          </Button>
+        </div>
       </div>
     </div>
   </div>
