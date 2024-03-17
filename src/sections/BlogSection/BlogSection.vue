@@ -48,18 +48,12 @@
         </transition>
       </div>
     </div>
-
-    <transition name="fade">
-      <GlobalLoader v-if="requestInProgress"/>
-    </transition>
-
   </div>
 </template>
 
 <script>
 import BlogCard from "@/components/cards/BlogCard/BlogCard.vue";
 import Button from "@/components/ui/Button/Button.vue";
-import GlobalLoader from "@/components/common/GlobalLoader/GlobalLoader.vue";
 
 import fetchDataWithTimeout from "@/mixins/fetchArrayDataWithTimeout";
 
@@ -71,7 +65,6 @@ export default {
   components: {
     BlogCard,
     Button,
-    GlobalLoader,
   },
 
   data() {
@@ -87,8 +80,12 @@ export default {
 
   methods: {
     loadBlogCards(showPreloader) {
-      this.fetchDataWithPromise(this.blogConfig, showPreloader).then((res) => {
+      if (showPreloader) this.$loader.inProgress = true;
+
+      this.fetchDataWithPromise(this.blogConfig).then((res) => {
         this.blogCardsToShow = [...this.blogCardsToShow, ...res];
+
+        this.$loader.inProgress = false;
       });
     },
   }

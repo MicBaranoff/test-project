@@ -19,6 +19,16 @@ Vue.component('Icon', Icon);
 Vue.use(swiper);
 Vue.use(veeValidate);
 
+
+// term global var instead global store
+Vue.prototype.$loader = new Vue({
+  data() {
+    return {
+      inProgress: false
+    };
+  }
+});
+
 new Vue({
   render: h => h(App),
   mounted() {
