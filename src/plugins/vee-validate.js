@@ -1,7 +1,7 @@
 import { extend, localize, setInteractionMode } from 'vee-validate';
 
 import { required, email, max, min, length } from 'vee-validate/dist/rules';
-import { messages } from 'vee-validate/dist/locale/ru';
+import { messages } from 'vee-validate/dist/locale/en';
 
 extend('required', required);
 extend('email', email);
@@ -25,7 +25,6 @@ localize({
       password: 'Password is incorrect, try again',
       is: 'The field value must match the test value',
       name: 'The field contains invalid characters or is less than two characters long',
-      email: 'Enter a real email address',
     },
   },
 });

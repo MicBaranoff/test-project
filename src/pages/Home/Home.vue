@@ -3,7 +3,7 @@
     <div class="home-page">
       <MainSection />
       <OurServicesSection class="home-page__services" />
-      <HomeListTextSection class="home-page__list" />
+      <ListTextSection class="home-page__list" />
       <AdvantagesSection  class="home-page__advantages" />
       <TestimonialsSection class="home-page__testimonials" />
       <TabsImageSection class="home-page__tabs" />
@@ -17,7 +17,7 @@
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout.vue'
 import MainSection from "@/sections/MainSection/MainSection.vue";
 import OurServicesSection from "@/sections/OurServicesSection/OurServicesSection.vue";
-import HomeListTextSection from "@/sections/ListTextSection/ListTextSection.vue";
+import ListTextSection from "@/sections/ListTextSection/ListTextSection.vue";
 import AdvantagesSection from "@/sections/AdvantagesSection/AdvantagesSection.vue";
 import TestimonialsSection from "@/sections/TestimonialsSection/TestimonialsSection.vue";
 import TabsImageSection from "@/sections/TabsImageSection/TabsImageSection.vue";
@@ -31,7 +31,7 @@ export default {
     MainSection,
     DefaultLayout,
     OurServicesSection,
-    HomeListTextSection,
+    ListTextSection,
     AdvantagesSection,
     TestimonialsSection,
     TabsImageSection,

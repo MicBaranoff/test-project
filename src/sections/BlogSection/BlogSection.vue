@@ -1,7 +1,11 @@
 <template>
   <div class="blog-section">
     <div class="container">
-      <div class="blog-section__head">
+      <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="500"
+          class="blog-section__head">
         <h4 class="text text--lg blog-section__font blog-section__font--subtitle">
           Our Blog
         </h4>
@@ -16,6 +20,9 @@
             name="list"
             class="blog-section__wrapper"
             tag="div"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="500"
         >
           <BlogCard
               class="blog-section__card"

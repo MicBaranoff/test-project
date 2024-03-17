@@ -1,11 +1,17 @@
 <template>
   <div class="list-text-section">
     <div class="container list-text-section__container">
-      <div class="list-text-section__image">
+      <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          class="list-text-section__image">
         <img src="/img/pages/home/photo-graphics-1.png" alt="" class="list-text-section__pic">
       </div>
       <div class="list-text-section__content">
-        <div class="list-text-section__title">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            class="list-text-section__title">
           <h2 class="title title--md">
             We connect our customers with the best, and help them keep up-and stay open.
           </h2>
@@ -13,7 +19,11 @@
 
         <IconList class="list-text-section__list" :data="listData" />
 
-        <Button>Start now</Button>
+        <Button
+            data-aos="fade-up"
+            data-aos-duration="700">
+          Start now
+        </Button>
       </div>
     </div>
   </div>

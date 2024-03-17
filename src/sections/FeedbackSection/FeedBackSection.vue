@@ -1,17 +1,26 @@
 <template>
   <div class="feedback-section">
-    <div class="container feedback-section__container">
+    <div
+        class="container feedback-section__container">
         <div
             class="feedback-section__wrapper"
             :class="{'feedback-section__wrapper--hide': formSubmitted}"
         >
-          <div class="feedback-section__title">
+          <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="500"
+              class="feedback-section__title">
             <h2 class="title title--lg feedback-section__font feedback-section__font--title">
               An enterprise template to ramp up your company website
             </h2>
           </div>
 
-          <FeedbackForm @onSubmit="formSubmitted = true" />
+          <FeedbackForm
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="500"
+              @onSubmit="formSubmitted = true" />
         </div>
 
         <div

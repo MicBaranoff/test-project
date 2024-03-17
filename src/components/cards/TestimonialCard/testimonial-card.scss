@@ -3,7 +3,7 @@
   box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.12);
   background: $white;
   border-radius: 12px;
-  padding: 40px;
+  padding: 40px 45px 40px 40px;
 
   @include is-tablet {
     padding: 20px;

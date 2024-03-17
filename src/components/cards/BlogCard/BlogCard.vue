@@ -1,15 +1,15 @@
 <template>
   <div class="blog-card">
     <div>
-      <div class="blog-card__image">
+      <a href="#" class="blog-card__image">
         <img class="blog-card__pic" :src="image" alt="">
-      </div>
+      </a>
       <div class="blog-card__info">
         <span class="text text--md blog-card__font blog-card__font--category">{{ category }}</span>
         <span class="text text--md blog-card__font blog-card__font--date">{{ date }}</span>
       </div>
       <div class="blog-card__message">
-        <p class="text text--lg">{{ message }}</p>
+        <a href="#" class="text text--lg blog-card__font blog-card__font--message blog-card__link">{{ message }}</a>
       </div>
     </div>
 

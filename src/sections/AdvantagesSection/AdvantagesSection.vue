@@ -2,7 +2,10 @@
   <div class="advantages-section">
     <div class="container advantages-section__container">
       <div class="advantages-section__content">
-        <div class="advantages-section__title">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            class="advantages-section__title">
           <h2 class="title title--md">
             We connect our customers with the best, and help them keep up-and stay open.
           </h2>
@@ -14,10 +17,15 @@
             :key="item.id + 'box'"
             :text="item.text"
             :icon="item.ico"
+            data-aos="fade-up"
+            data-aos-duration="700"
         />
       </div>
 
-      <div class="advantages-section__image">
+      <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          class="advantages-section__image">
         <img src="/img/pages/home/call.jpg" alt="" class="advantages-section__pic">
 
         <div class="advantages-section__chart">
@@ -51,7 +59,7 @@ const listData = [
 ]
 
 export default {
-  name: "ListTextSection",
+  name: "AdvantagesSection",
   components: {
     TextIconBox,
     TestDataChart,

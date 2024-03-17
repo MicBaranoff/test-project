@@ -1,7 +1,10 @@
 <template>
   <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__info">
+      <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          class="footer__info">
         <a href="/" class="footer__logo">
           <Icon name="logo-dark" />
         </a>
@@ -15,7 +18,11 @@
       </div>
 
       <nav class="footer__nav">
-        <div class="footer__nav-col">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="100"
+            class="footer__nav-col">
           <span class="text text--lg footer__nav-title footer__font footer__font--title">Landings</span>
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -29,7 +36,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer__nav-col">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="200"
+            class="footer__nav-col">
           <span class="ext text--lg footer__nav-title footer__font footer__font--title">Company</span>
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -43,7 +54,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer__nav-col">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="300"
+            class="footer__nav-col">
           <span class="ext text--lg footer__nav-title footer__font footer__font--title">Resources</span>
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -64,7 +79,7 @@
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
 }
 </script>
 

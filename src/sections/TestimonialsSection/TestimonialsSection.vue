@@ -2,13 +2,21 @@
   <div class="testimonials-section">
     <div class="container testimonials-section__container">
       <div class="testimonials-section__head">
-        <div class="testimonials-section__title">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="500"
+            class="testimonials-section__title">
           <h2 class="title title--lg testimonials-section__font testimonials-section__font--title">
             An enterprise template to ramp up your company website
           </h2>
         </div>
 
-        <div class="testimonials-section__nav">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="500"
+            class="testimonials-section__nav">
           <RoundIcoButton
               @onClick="goPrev"
               icon="icons/nav/arrow-left"
@@ -50,12 +58,15 @@
             }
           }"
       >
-        <template #slide="{ itemData } = {}">
+        <template #slide="{ itemData, index } = {}">
           <TestimonialCard
             :title="itemData.name"
             :text="itemData.desc"
             :image="itemData.img"
             :message="itemData.message"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            :data-aos-delay="100 * (index + 1)"
           />
         </template>
       </Slider>
