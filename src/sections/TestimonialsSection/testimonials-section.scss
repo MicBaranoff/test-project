@@ -2,6 +2,10 @@
   padding: 104px 0 88px 0;
   background: $blue-dark;
 
+  @include is-tablet {
+    padding: 50px 0;
+  }
+
   &__font {
     &--title {
       color: $white;
@@ -17,6 +21,7 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 67px;
+    gap: 15px;
   }
 
   &__title {
@@ -30,5 +35,9 @@
     position: relative;
     bottom: -11px;
     right: -51px;
+
+    @include is-desktop-1240 {
+      position: static;
+    }
   }
 }

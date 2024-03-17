@@ -21,6 +21,10 @@
   &__slide {
     width: 145px;
 
+    @include is-tablet {
+      width: 115px;
+    }
+
     &-pic {
       width: 100%;
     }

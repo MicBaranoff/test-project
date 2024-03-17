@@ -58,13 +58,35 @@
 }
 
 @mixin is-mobile {
-  @at-root .js-is-mobile & {
+  @media screen and (max-device-width: 700px)
+                and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin is-mobile-landscape {
+  @media screen and (max-device-width: 1024px)
+                and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+@mixin is-tablet {
+  @media screen and (min-device-width: 700px)
+                and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin is-desktop {
-  @at-root .js-is-desktop & {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin is-desktop-1240 {
+  @media screen and (max-width: 1240px) {
     @content;
   }
 }

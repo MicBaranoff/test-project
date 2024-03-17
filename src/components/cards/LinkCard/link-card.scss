@@ -1,5 +1,5 @@
 .link-card {
-  width: 300px;
+  width: 100%;
 
   &__font {
     &--text {
@@ -18,6 +18,10 @@
     border-radius: 24px;
     overflow: hidden;
     margin-bottom: 24px;
+
+    @include is-tablet {
+      height: 300px;
+    }
   }
 
   &__pic {

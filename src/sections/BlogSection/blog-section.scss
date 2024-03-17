@@ -11,6 +11,10 @@
     max-width: 842px;
     text-align: center;
     margin: 0 auto 80px;
+
+    @include is-tablet {
+      margin: 0 auto 60px;
+    }
   }
 
   &__title {
@@ -25,6 +29,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 50px;
+
+    @include is-tablet {
+      column-gap: 20px;
+      row-gap: 30px;
+    }
   }
 
   &__card {
@@ -34,5 +43,9 @@
     display: flex;
     justify-content: center;
     margin-top: 84px;
+
+    @include is-tablet {
+      margin-top: 60px;
+    }
   }
 }

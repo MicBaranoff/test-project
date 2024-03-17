@@ -1,6 +1,10 @@
 .header {
   padding-top: 56px;
 
+  @include is-tablet {
+    padding-top: 26px;
+  }
+
   &__logo {
     display: block;
     width: 162px;

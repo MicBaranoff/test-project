@@ -13,15 +13,28 @@
     scale: 1.05;
   }
 
+  &:active {
+    scale: 0.95;
+  }
 
   &--md {
     width: 72px;
     height: 72px;
 
+    @include is-tablet {
+      width: 52px;
+      height: 52px;
+    }
+
     #{$parent} {
       &__ico {
         width: 36px;
         height: 36px;
+
+        @include is-tablet {
+          width: 26px;
+          height: 26px;
+        }
       }
     }
   }

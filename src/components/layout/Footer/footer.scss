@@ -2,6 +2,10 @@
   padding-top: 100px;
   padding-bottom: 114px;
 
+  @include is-tablet {
+    padding-bottom: 40px;
+  }
+
   &__font {
     &--text {
       color: $gray;
@@ -21,6 +25,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
   }
 
   &__info {

@@ -15,6 +15,7 @@
       <div class="our-services-section__cards">
         <LinkCard
             v-for="item in ourServicesConfig"
+            class="our-services-section__card"
             :key="item.id + 'serv'"
             :title="item.title"
             :text="item.text"

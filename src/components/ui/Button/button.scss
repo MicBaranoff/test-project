@@ -13,6 +13,10 @@
     scale: 1.05;
   }
 
+  &:active {
+    scale: 0.95;
+  }
+
   &:disabled {
     pointer-events: none;
     touch-action: none;
@@ -28,6 +32,11 @@
   &--md {
     padding: 16px 56px;
     height: 60px;
+
+    @include is-tablet {
+      padding: 12px 36px;
+      height: 54px;
+    }
 
     #{$parent} {
       &__font {

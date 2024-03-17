@@ -1,6 +1,10 @@
 .test-data-chart {
   padding: 24px 26px;
 
+  @include is-tablet {
+    padding: 14px 16px;
+  }
+
   &__font {
     &--text {
       font-weight: $font-accent--1;

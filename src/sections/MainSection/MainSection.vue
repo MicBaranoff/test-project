@@ -10,7 +10,7 @@
             </h1>
           </div>
           <p class="text text--md main-section__font main-section__font--text">
-            Funding handshake buyer business-to-business metrics iPad partnership. <br>
+            Funding handshake buyer business-to-business metrics iPad partnership.
             First mover advantage innovator success deployment non-disclosure.
           </p>
 

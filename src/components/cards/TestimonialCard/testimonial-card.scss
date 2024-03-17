@@ -5,6 +5,10 @@
   border-radius: 12px;
   padding: 40px;
 
+  @include is-tablet {
+    padding: 20px;
+  }
+
   &__font {
 
     &--author {
@@ -27,9 +31,16 @@
 
   &__img {
     width: 58px;
+    min-width: 58px;
     height: 58px;
     overflow: hidden;
     border-radius: 50%;
+
+    @include is-tablet {
+      width: 48px;
+      min-width: 48px;
+      height: 48px;
+    }
   }
 
   &__pic {

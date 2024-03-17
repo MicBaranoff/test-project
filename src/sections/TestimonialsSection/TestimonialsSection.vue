@@ -32,6 +32,11 @@
             slidesPerView: 3,
             navigation: false,
             pagination: false,
+            breakpoints: {
+              700: {
+                spaceBetween: 15,
+              }
+            }
           }"
       >
         <template #slide="{ itemData } = {}">

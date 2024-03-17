@@ -6,14 +6,26 @@
 
   &__list {
     margin-top: 199px;
+
+    @include is-tablet {
+      margin-top: 100px;
+    }
   }
 
   &__advantages {
     margin-top: 80px;
+
+    @include is-tablet {
+      margin-top: 100px;
+    }
   }
 
   &__testimonials {
     margin-top: 197px;
+
+    @include is-tablet {
+      margin-top: 100px;
+    }
   }
 
   &__tabs {
@@ -22,10 +34,18 @@
 
   &__blog {
     margin-top: 150px;
+
+    @include is-tablet {
+      margin-top: 100px;
+    }
   }
 
   &__feedback {
     margin-top: 124px;
+
+    @include is-tablet {
+      margin-top: 100px;
+    }
   }
 
 

@@ -1,9 +1,15 @@
 .main-section {
   width: 100%;
-  height: 798px;
+  min-height: 798px;
   background: $blue-dark;
   padding-top: 162px;
   position: relative;
+
+  @include is-tablet {
+    padding-top: 126px;
+    min-height: 0;
+    padding-bottom: 20px;
+  }
   
   &:after {
     content: '';
@@ -32,6 +38,10 @@
     width: 100%;
     max-width: 567px;
     padding-top: 53px;
+
+    @include is-tablet {
+      padding-top: 0;
+    }
   }
 
   &__container {
@@ -51,6 +61,13 @@
   &__image {
     width: 100%;
     max-width: 493px;
+
+    @include is-tablet {
+      max-width: 40%;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__pic {
@@ -61,6 +78,10 @@
     margin-top: 40px;
     display: flex;
     gap: 24px;
+
+    @include is-tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__logos {

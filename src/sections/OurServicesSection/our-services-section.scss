@@ -11,6 +11,10 @@
     max-width: 842px;
     text-align: center;
     margin: 0 auto 80px;
+
+    @include is-tablet {
+      margin: 0 auto 50px;
+    }
   }
 
   &__cards {
@@ -21,6 +25,18 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+
+    @include is-tablet {
+      gap: 10px;
+    }
+  }
+
+  &__card {
+    width: 300px;
+
+    @include is-tablet {
+      width: 31%;
+    }
   }
 
   &__title {

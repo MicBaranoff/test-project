@@ -5,11 +5,20 @@
   &--md {
     font-size: 36px;
     line-height: 156%;
+
+    @include is-tablet {
+      font-size: 30px;
+    }
   }
 
   &--lg {
     font-size: 48px;
     line-height: 150%;
+
+    @include is-tablet {
+      font-size: 42px;
+      line-height: 135%;
+    }
   }
 }
 
@@ -25,15 +34,27 @@
   &--md {
     font-size: 16px;
     line-height: 175%;
+
+    @include is-tablet {
+      line-height: 145%;
+    }
   }
 
   &--lg {
     font-size: 20px;
     line-height: 160%;
+
+    @include is-tablet {
+      font-size: 18px;
+    }
   }
 
   &--extra-lg {
     font-size: 24px;
     line-height: 150%;
+
+    @include is-tablet {
+      font-size: 21px;
+    }
   }
 }

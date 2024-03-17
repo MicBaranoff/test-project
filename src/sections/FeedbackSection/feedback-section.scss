@@ -14,6 +14,10 @@
     overflow: hidden;
     max-width: 1200px;
 
+    @include is-tablet {
+      border-radius: 0px;
+    }
+
     &:after {
       content: '';
       display: block;

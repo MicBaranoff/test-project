@@ -4,15 +4,29 @@
     display: flex;
     justify-content: space-between;
     max-width: 1130px;
+    gap: 15px;
+
+    @include is-tablet {
+      margin-bottom: 40px;
+    }
   }
 
   &__content {
     width: 500px;
     padding-top: 106px;
+    gap: 15px;
+
+    @include is-tablet {
+      padding-top: 0px;
+    }
   }
 
   &__title {
     margin-bottom: 60px;
+
+    @include is-tablet {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -23,6 +37,10 @@
     width: 100%;
     max-width: 444px;
     position: relative;
+
+    @include is-tablet {
+      max-width: 40%;
+    }
   }
 
   &__pic {
@@ -44,5 +62,13 @@
     left: 44%;
     transform: translateX(-50%);
     bottom: -79px;
+
+    @include is-tablet {
+      width: 201px;
+      padding: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -55px;
+    }
   }
 }

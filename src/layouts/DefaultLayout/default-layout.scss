@@ -11,5 +11,9 @@
 
   &__footer {
     margin-top: 84px;
+
+    @include is-tablet {
+      margin-top: 0;
+    }
   }
 }
