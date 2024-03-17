@@ -11,15 +11,19 @@
           </h2>
         </div>
 
-        <TextIconBox
-            class="advantages-section__item"
+        <div
             v-for="item in listData"
             :key="item.id + 'box'"
-            :text="item.text"
-            :icon="item.ico"
+            class="advantages-section__item"
             data-aos="fade-up"
             data-aos-duration="700"
-        />
+        >
+          <TextIconBox
+              :text="item.text"
+              :icon="item.ico"
+          />
+        </div>
+
       </div>
 
       <div

@@ -64,7 +64,7 @@
             :text="itemData.desc"
             :image="itemData.img"
             :message="itemData.message"
-            data-aos="fade-up"
+            data-aos="fade-in"
             data-aos-duration="700"
             :data-aos-delay="100 * (index + 1)"
           />
