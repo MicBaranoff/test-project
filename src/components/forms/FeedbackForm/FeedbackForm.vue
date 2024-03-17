@@ -17,7 +17,6 @@
         color="green"
         :disabled="failed || requestInProgress"
       >
-        {{$loader.inProgress}}
         Start now
       </Button>
     </form>
