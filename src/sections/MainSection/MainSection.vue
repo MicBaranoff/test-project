@@ -34,7 +34,7 @@
         <div data-aos="fade-in"
              data-aos-duration="700"
              data-aos-delay="800" class="main-section__image">
-          <img class="main-section__pic" src="/img/pages/home/hero-graphics.png" alt="">
+          <img class="main-section__pic" src="img/pages/home/hero-graphics.png" alt="">
         </div>
       </div>
 

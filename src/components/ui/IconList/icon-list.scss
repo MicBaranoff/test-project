@@ -24,7 +24,7 @@
       align-items: center;
       justify-content: center;
       content: '';
-      background: url('/public/img/icons/check.png') center / 24px no-repeat, $blue-dark;
+      background: url('#{$imgPath}icons/check.png') center / 24px no-repeat, $blue-dark;
     }
   }
 }

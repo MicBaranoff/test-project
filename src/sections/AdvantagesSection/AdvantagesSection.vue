@@ -26,7 +26,7 @@
           data-aos="fade-up"
           data-aos-duration="700"
           class="advantages-section__image">
-        <img src="/img/pages/home/call.jpg" alt="" class="advantages-section__pic">
+        <img src="img/pages/home/call.jpg" alt="" class="advantages-section__pic">
 
         <div class="advantages-section__chart">
           <TestDataChart />

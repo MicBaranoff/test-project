@@ -5,7 +5,7 @@
           data-aos="fade-up"
           data-aos-duration="700"
           class="list-text-section__image">
-        <img src="/img/pages/home/photo-graphics-1.png" alt="" class="list-text-section__pic">
+        <img src="img/pages/home/photo-graphics-1.png" alt="" class="list-text-section__pic">
       </div>
       <div class="list-text-section__content">
         <div

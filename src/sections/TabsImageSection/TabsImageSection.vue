@@ -6,7 +6,7 @@
           data-aos-duration="700"
           data-aos-delay="500"
           class="tabs-image-section__image">
-        <img src="/img/pages/home/office.jpg" alt="" class="tabs-image-section__pic">
+        <img src="img/pages/home/office.jpg" alt="" class="tabs-image-section__pic">
       </div>
 
       <div class="tabs-image-section__wrapper">
