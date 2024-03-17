@@ -6,6 +6,10 @@
     padding-bottom: 40px;
   }
 
+  @include is-mobile {
+    padding-bottom: 40px;
+  }
+
   &__font {
     &--text {
       color: $gray;
@@ -19,6 +23,10 @@
       text-decoration: none;
       color: $gray;
       line-height: 300%;
+
+      @include is-mobile {
+        line-height: 250%;
+      }
     }
   }
 
@@ -26,6 +34,10 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
+
+    @include is-mobile {
+      flex-wrap: wrap-reverse;
+    }
   }
 
   &__info {
@@ -34,12 +46,20 @@
 
   &__info-text {
     margin-bottom: 64px;
+
+    @include is-mobile {
+      margin-bottom: 40px;
+    }
   }
 
   &__logo {
     display: block;
     width: 156px;
     margin-bottom: 37px;
+
+    @include is-mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__nav {
@@ -48,8 +68,17 @@
     width: 100%;
     max-width: 720px;
 
+    @include is-mobile {
+      flex-wrap: wrap;
+    }
+
     &-col {
       width: 31.2%;
+
+      @include is-mobile {
+        width: 50%;
+        margin-bottom: 20px;
+      }
     }
 
     &-list {
@@ -57,6 +86,10 @@
       margin: 0;
       list-style-type: none;
       margin-top: 32px;
+
+      @include is-mobile {
+        margin-top: 20px;
+      }
     }
   }
 

@@ -18,6 +18,11 @@
       border-radius: 0px;
     }
 
+    @include is-mobile {
+      padding: 40px 25px;
+      border-radius: 0px;
+    }
+
     &:after {
       content: '';
       display: block;
@@ -30,6 +35,13 @@
       border-radius: 50%;
       background: #1C3D5B;
       pointer-events: none;
+
+      @include is-mobile {
+        top: -385px;
+        right: -280px;
+        width: 700px;
+        height: 700px;
+      }
     }
   }
 
@@ -72,6 +84,10 @@
     visibility: hidden;
 
     transition: opacity $transTime700ms ease, transform $transTime700ms ease;
+
+    @include is-mobile {
+      text-align: center;
+    }
 
     &--active {
       transform: none;

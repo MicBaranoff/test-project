@@ -15,5 +15,9 @@
     @include is-tablet {
       margin-top: 0;
     }
+
+    @include is-mobile {
+      margin-top: 0;
+    }
   }
 }

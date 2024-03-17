@@ -2,8 +2,15 @@
 
   &__font {
     &--link {
+      font-size: 16px;
+      line-height: 175%;
       color: $white;
       text-decoration: none;
+
+      @include is-mobile {
+        font-size: 28px;
+        line-height: 175%;
+      }
     }
   }
 
@@ -13,5 +20,15 @@
     padding: 0;
     display: flex;
     gap: 40px;
+
+    @include is-mobile {
+      display: block;
+    }
+  }
+
+  &__item {
+    @include is-mobile {
+      margin: 15px 0;
+    }
   }
 }

@@ -12,6 +12,7 @@
             required
         />
       <Button
+          class="feedback-form__button"
         typeAttr="submit"
         color="green"
         :disabled="failed || requestInProgress"
@@ -36,6 +37,9 @@ import simulateFetchRequest from "@/mixins/simulateFetchRequest";
 
 import { ValidationObserver } from 'vee-validate';
 
+const formDataTemplate = {
+  email: ''
+}
 export default {
   name: "FeedbackForm",
   mixins: [simulateFetchRequest],
@@ -48,15 +52,18 @@ export default {
 
   data() {
     return {
-      formData: {
-        email: '',
-      },
+      formData: {...formDataTemplate},
     };
   },
 
   methods: {
+    resetFormData() {
+      this.formData = {...formDataTemplate}
+    },
     submitHandler() {
       this.simulateRequest(this.formData).then(() => {
+        this.resetFormData();
+        this.$refs.formObserver.reset();
         this.$emit('onSubmit');
       })
     },

@@ -9,6 +9,11 @@
     @include is-tablet {
       font-size: 30px;
     }
+
+    @include is-mobile {
+      font-size: 24px;
+      line-height: 175%;
+    }
   }
 
   &--lg {
@@ -17,6 +22,11 @@
 
     @include is-tablet {
       font-size: 42px;
+      line-height: 135%;
+    }
+
+    @include is-mobile {
+      font-size: 34px;
       line-height: 135%;
     }
   }
@@ -45,6 +55,10 @@
     line-height: 160%;
 
     @include is-tablet {
+      font-size: 18px;
+    }
+
+    @include is-mobile {
       font-size: 18px;
     }
   }

@@ -5,6 +5,10 @@
     padding-top: 26px;
   }
 
+  @include is-mobile {
+    padding-top: 22px;
+  }
+
   &__logo {
     display: block;
     width: 162px;
@@ -13,6 +17,10 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include is-mobile {
+      align-items: center;
+    }
   }
 
   &__wrapper {
@@ -20,5 +28,33 @@
     align-items: center;
     gap: 40px;
     padding-right: 10px;
+
+    @include is-mobile {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include is-mobile {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    width: 40px;
+    height: 40px;
+    color: $white;
+
+    @include is-mobile {
+      display: block;
+    }
   }
 }

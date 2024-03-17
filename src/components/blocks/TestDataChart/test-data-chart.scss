@@ -5,6 +5,10 @@
     padding: 14px 16px;
   }
 
+  @include is-mobile {
+    padding: 14px 16px;
+  }
+
   &__font {
     &--text {
       font-weight: $font-accent--1;

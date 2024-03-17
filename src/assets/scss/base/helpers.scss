@@ -1,12 +1,18 @@
 .mobile-hide {
   @include is-mobile {
-    display: none;
+    display: none !important;
+  }
+}
+
+.desktop-tablet-hide {
+  @include is-desktop {
+    display: none !important;
   }
 }
 
 .desktop-hide {
   @include is-desktop {
-    display: none;
+    display: none !important;
   }
 }
 

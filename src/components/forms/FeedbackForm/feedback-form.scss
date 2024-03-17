@@ -3,7 +3,19 @@
   justify-content: center;
   gap: 24px;
 
+  @include is-mobile {
+    flex-wrap: wrap;
+    width: 270px;
+    margin: 0 auto;
+  }
+
   &__input {
     width: 370px;
+  }
+
+  &__button {
+    @include is-mobile {
+      width: 100%;
+    }
   }
 }

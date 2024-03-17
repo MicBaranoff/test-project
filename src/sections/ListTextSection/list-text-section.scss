@@ -11,6 +11,11 @@
     @include is-tablet {
       position: static;
     }
+
+    @include is-mobile {
+      flex-wrap: wrap;
+      position: static;
+    }
   }
 
   &__content {
@@ -19,6 +24,10 @@
 
     @include is-tablet {
       width: auto;
+      padding-top: 0;
+    }
+
+    @include is-mobile {
       padding-top: 0;
     }
   }

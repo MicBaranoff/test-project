@@ -15,6 +15,10 @@
     @include is-tablet {
       margin: 0 auto 50px;
     }
+
+    @include is-mobile {
+      margin: 0 auto 30px;
+    }
   }
 
   &__cards {
@@ -29,13 +33,24 @@
     @include is-tablet {
       gap: 10px;
     }
+
+    @include is-mobile {
+      gap: 30px;
+    }
   }
 
   &__card {
     width: 300px;
+    max-width: 30%;
 
     @include is-tablet {
+      max-width: 31%;
       width: 31%;
+    }
+
+    @include is-mobile {
+      max-width: 100%;
+      width: 100%;
     }
   }
 

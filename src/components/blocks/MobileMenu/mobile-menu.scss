@@ -1,0 +1,60 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $blue-dark;
+  padding: 22px 0 65px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: -385px;
+    right: -280px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: #1C3D5B;
+  }
+
+  &__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: 162px;
+  }
+
+  &__close {
+    display: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    width: 35px;
+    height: 35px;
+    color: $white;
+
+    @include is-mobile {
+      display: block;
+    }
+  }
+}

@@ -14,6 +14,14 @@
             slidesPerView: 6,
             navigation: false,
             pagination: false,
+            breakpoints: {
+              320: {
+                slidesPerView: 3
+              },
+              700: {
+                slidesPerView: 6
+              }
+            }
           }"
         container-class="linear"
     >

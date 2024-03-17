@@ -25,6 +25,14 @@
       width: 115px;
     }
 
+    @include is-mobile {
+      width: 115px;
+    }
+
+    @include is-mobile-landscape {
+      width: 115px;
+    }
+
     &-pic {
       width: 100%;
     }

@@ -9,6 +9,10 @@
     padding: 20px;
   }
 
+  @include is-mobile {
+    padding: 25px;
+  }
+
   &__font {
 
     &--author {
@@ -37,6 +41,12 @@
     border-radius: 50%;
 
     @include is-tablet {
+      width: 48px;
+      min-width: 48px;
+      height: 48px;
+    }
+
+    @include is-mobile {
       width: 48px;
       min-width: 48px;
       height: 48px;

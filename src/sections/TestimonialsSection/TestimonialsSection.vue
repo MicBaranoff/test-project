@@ -33,8 +33,19 @@
             navigation: false,
             pagination: false,
             breakpoints: {
+              320: {
+                slidesPerView: 1,
+              },
               700: {
+                 slidesPerView: 2,
                 spaceBetween: 15,
+              },
+              800: {
+                 slidesPerView: 3,
+                spaceBetween: 15,
+              },
+              1024: {
+                 slidesPerView: 3,
               }
             }
           }"

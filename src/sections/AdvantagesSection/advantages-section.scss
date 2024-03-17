@@ -3,11 +3,17 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     max-width: 1130px;
     gap: 15px;
 
     @include is-tablet {
       margin-bottom: 40px;
+    }
+
+    @include is-mobile {
+      margin-bottom: 40px;
+      flex-direction: column-reverse;
     }
   }
 
@@ -19,6 +25,11 @@
     @include is-tablet {
       padding-top: 0px;
     }
+
+    @include is-mobile {
+      width: auto;
+      margin-top: 30px;
+    }
   }
 
   &__title {
@@ -26,6 +37,10 @@
 
     @include is-tablet {
       margin-bottom: 40px;
+    }
+
+    @include is-mobile {
+      margin-bottom: 30px;
     }
   }
 
@@ -61,14 +76,22 @@
     border-radius: 12px;
     left: 44%;
     transform: translateX(-50%);
-    bottom: -79px;
+    bottom: -160px;
 
     @include is-tablet {
       width: 201px;
       padding: 0;
       left: 50%;
       transform: translateX(-50%);
-      bottom: -55px;
+      bottom: -145px;
+    }
+
+    @include is-mobile {
+      width: 201px;
+      padding: 0;
+      left: 60%;
+      transform: translateX(-50%);
+      bottom: -126px;
     }
   }
 }

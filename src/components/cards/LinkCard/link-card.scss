@@ -22,6 +22,10 @@
     @include is-tablet {
       height: 300px;
     }
+
+    @include is-mobile {
+      height: 270px;
+    }
   }
 
   &__pic {

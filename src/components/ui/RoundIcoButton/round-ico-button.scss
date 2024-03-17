@@ -26,6 +26,11 @@
       height: 52px;
     }
 
+    @include is-mobile {
+      width: 42px;
+      height: 42px;
+    }
+
     #{$parent} {
       &__ico {
         width: 36px;
@@ -34,6 +39,11 @@
         @include is-tablet {
           width: 26px;
           height: 26px;
+        }
+
+        @include is-mobile {
+          width: 20px;
+          height: 20px;
         }
       }
     }

@@ -5,7 +5,7 @@
         <div class="main-section__info">
           <div class="main-section__title">
             <h1 class="title title--lg main-section__font main-section__font--title ">
-              Save time by building <br>
+              Save time by building <br class="mobile-hide">
               fast with Boldo Template
             </h1>
           </div>

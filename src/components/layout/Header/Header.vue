@@ -9,6 +9,18 @@
         <Button size="sm" color="white">Log In</Button>
       </div>
 
+      <transition name="fade">
+        <MobileMenu
+            @onClose="showMobileMenu = false"
+            v-if="showMobileMenu" />
+      </transition>
+
+      <button
+          @click="showMobileMenu = true"
+          class="header__burger"
+          type="button">
+        <Icon name="icons/burger" />
+      </button>
     </div>
   </header>
 </template>
@@ -16,12 +28,19 @@
 <script>
 import NavBar from "@/components/ui/NavBar/NavBar.vue";
 import Button from "@/components/ui/Button/Button.vue";
+import MobileMenu from "@/components/blocks/MobileMenu/MobileMenu.vue";
 
 export default {
   name: "Header",
   components: {
     NavBar,
     Button,
+    MobileMenu,
+  },
+  data() {
+    return {
+      showMobileMenu: false,
+    }
   }
 }
 </script>

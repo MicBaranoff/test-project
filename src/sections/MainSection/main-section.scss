@@ -10,6 +10,12 @@
     min-height: 0;
     padding-bottom: 20px;
   }
+
+  @include is-mobile {
+    padding-top: 96px;
+    min-height: 0;
+    padding-bottom: 20px;
+  }
   
   &:after {
     content: '';
@@ -22,6 +28,13 @@
     height: 1293px;
     border-radius: 50%;
     background: #1C3D5B;
+
+    @include is-mobile {
+      top: -385px;
+      right: -280px;
+      width: 700px;
+      height: 700px;
+    }
   }
 
   &__font {
@@ -42,6 +55,11 @@
     @include is-tablet {
       padding-top: 0;
     }
+
+    @include is-mobile {
+      padding-top: 0;
+      margin-top: 20px;
+    }
   }
 
   &__container {
@@ -52,6 +70,10 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include is-mobile {
+      flex-wrap: wrap-reverse;
+    }
   }
 
   &__title {

@@ -6,6 +6,10 @@
     padding: 50px 0;
   }
 
+  @include is-mobile {
+    padding: 50px 0;
+  }
+
   &__font {
     &--title {
       color: $white;
@@ -22,6 +26,12 @@
     justify-content: space-between;
     margin-bottom: 67px;
     gap: 15px;
+
+    @include is-mobile {
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
   }
 
   &__title {

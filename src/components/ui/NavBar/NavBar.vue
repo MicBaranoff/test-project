@@ -2,17 +2,17 @@
   <nav class="nav-bar">
     <ul class="nav-bar__list">
       <li class="nav-bar__item">
-        <a class="text text--md nav-bar__font nav-bar__font--link" href="/">
+        <a class=" nav-bar__font nav-bar__font--link" href="/">
           Product
         </a>
       </li>
       <li class="nav-bar__item">
-        <a class="text text--md nav-bar__font nav-bar__font--link" href="/">
+        <a class=" nav-bar__font nav-bar__font--link" href="/">
           Services
         </a>
       </li>
       <li class="nav-bar__item">
-        <a class="text text--md nav-bar__font nav-bar__font--link" href="/">
+        <a class=" nav-bar__font nav-bar__font--link" href="/">
           About
         </a>
       </li>
